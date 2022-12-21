@@ -5,9 +5,15 @@
   display: flex;
   gap: $gap;
 
+
   &__box {
+    &:nth-child(4) {
+      //TODO посмотреть как добраться
+    }
+
     min-height: 320px;
-    flex: 1;
+    // flex: 1;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,20 +24,37 @@
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 25px;
+    padding: 10px;
+
+    @include xl {
+      min-height: 280px;
+    }
   }
 
-  &__img {}
+  &__img {
+    max-width: 80px; //TODO подправить тень на иконках, выкачать правильно
+  }
 
   &__title {
     font-weight: 500;
     font-size: 32px;
     line-height: 120%;
-    /* or 38px */
+    max-width: 253px;
+
 
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+    @include xl {
+      font-size: 24px;
+
+
+    }
+
   }
+
+
 }

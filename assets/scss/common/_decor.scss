@@ -6,12 +6,20 @@
     position: absolute;
     left: 0;
     z-index: 2;
+
+    @include xl {
+      max-width: 371px;
+    }
   }
 
   &__right {
     position: absolute;
     right: 0;
     z-index: 2;
+
+    @include xl {
+      max-width: 266px;
+    }
 
   }
 
