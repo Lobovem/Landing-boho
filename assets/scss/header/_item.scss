@@ -3,18 +3,23 @@
 
 .item {
   // display: flex;
-  gap: $gap;
-  position: relative;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 
-  @include lg {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  &__wrap {
+    gap: $gap;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 90px;
 
-  @include xx {
-    gap: $gap-sm;
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include xx {
+      gap: $gap-sm;
+    }
+
   }
 
   &__box-first {
