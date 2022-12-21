@@ -1,2 +1,18 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.decor {
+  &__left {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+
+  }
+
+}

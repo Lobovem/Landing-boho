@@ -1,0 +1,37 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.item {
+  display: flex;
+  gap: $gap;
+
+  &__box {
+    min-height: 320px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-xl;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(18.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 25px;
+  }
+
+  &__img {}
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+}

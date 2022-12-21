@@ -6,28 +6,39 @@
   max-height: 1200px;
   min-height: 800px;
 
+  &__decor-main {
+    position: absolute;
+    z-index: 1;
+  }
+
   &__wrap {
     padding-top: 60px;
   }
 
   &__contant {
     display: flex;
+    justify-content: center;
     gap: $gap-lg;
+    position: relative;
+    z-index: 3;
   }
 
 
   &__img-box {
     max-height: 1200px;
-    // height: 80vh;
+    height: 80vh;
     min-height: 400px;
   }
 
   &__img {
-    // height: 100%;
+
+    height: 100%;
 
     // height: 100%; // // height: 100vh;
     // min-height: 400px;
   }
 
   &__actions {}
+
+  &__item-wrap {}
 }

@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 780px;
+
 
 
   &__logo {
@@ -34,6 +36,14 @@
     margin-bottom: 40px;
   }
 
+  &__link-box {
+    padding: 3px;
+    min-height: 92px;
+    width: 392px;
+    // background: linear-gradient(#FFF387 100%, #FFF387 0%, #FFF387 100%, #FFF387 0%, #FFF387 100%);
+    background: #FFF081;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -45,9 +55,10 @@
     text-transform: uppercase;
 
     color: #0F101B;
-    padding: 10px;
-    min-height: 92px;
-    width: 392px;
+    // padding: 10px;
+    min-height: 86px;
+    width: 386px; //TODO сделать градиент на border кнопке
+
     background: linear-gradient(93.73deg, #FFC93D 0.41%, #CC9F2A 31.75%, #F5C64E 67.8%, #F0BC38 93.39%);
   }
 }
