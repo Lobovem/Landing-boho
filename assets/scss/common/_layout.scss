@@ -4,8 +4,17 @@
 
 .layout {
 
-  &__xl {
+  &__main {
     width: min(100% - 80px, 1640px);
     margin-inline: auto;
+
+    @include sm {
+      width: min(100% - 40px, 1640px);
+    }
+
+    @include xx {
+      width: min(100% - 20px, 1640px);
+    }
   }
+
 }

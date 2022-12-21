@@ -1,26 +1,44 @@
 @font-face {
-  font-family: "TT Norms";
-  font-weight: bold;
+  font-family: "Inter";
+  font-weight: 800;
   font-style: normal;
 
   font-display: swap;
-  src: url("../fonts/TTNorms-Bold.woff2") format("woff2");
+  src: url("../fonts/Inter-ExtraBold-800.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "TT Norms";
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
   font-weight: 500;
   font-style: normal;
 
   font-display: swap;
-  src: url("../fonts/TTNorms-Medium.woff2") format("woff2");
+  src: url("../fonts/Inter-Medium-500.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "TT Norms";
-  font-weight: normal;
+  font-family: "Inter";
+  font-weight: 400;
   font-style: normal;
 
   font-display: swap;
-  src: url("../fonts/TTNorms-Regular.woff2") format("woff2");
+  src: url("../fonts/Inter-Regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Begika";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/Begika.woff2") format("woff2");
 }

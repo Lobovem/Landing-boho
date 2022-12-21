@@ -2,44 +2,91 @@
 @use "../mixins" as *;
 
 .item {
-  display: flex;
+  // display: flex;
   gap: $gap;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include xx {
+    gap: $gap-sm;
+  }
+
+  &__box-first {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+
+  }
+
+  &__box-second {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%; //TODO Уточнить как лучше с центровкой содержимового внутри
+  }
 
   &__box {
-    &:nth-child(4) {
-      //TODO посмотреть как добраться
-    }
 
     min-height: 320px;
     // flex: 1;
-    flex-grow: 1;
+    // flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: flex-start;
     gap: $gap-xl;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(18.5px);
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 25px;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
 
     @include xl {
       min-height: 280px;
+      // padding-top: 30px;
+    }
+
+    @include sm {
+      min-height: 180px;
+      gap: $gap;
+    }
+
+    @include xx {
+      min-height: 138px;
+
     }
   }
 
   &__img {
-    max-width: 80px; //TODO подправить тень на иконках, выкачать правильно
+    max-width: 80px;
+    display: flex;
+
+    @include xl {
+      max-width: 70px;
+    }
+
+    @include sm {
+      max-width: 40px;
+    }
+
+    @include xx {
+      max-width: 35px;
+    }
   }
 
   &__title {
     font-weight: 500;
     font-size: 32px;
     line-height: 120%;
-    max-width: 253px;
+    max-width: 254px;
 
 
     text-align: center;
@@ -50,8 +97,17 @@
 
     @include xl {
       font-size: 24px;
+      max-width: 191px;
+    }
 
+    @include sm {
+      font-size: 16px;
+      max-width: 127px;
+    }
 
+    @include xx {
+      font-size: 14px;
+      max-width: 111px;
     }
 
   }
