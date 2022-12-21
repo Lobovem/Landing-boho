@@ -1,2 +1,33 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.header {
+  height: 100vh;
+  max-height: 1200px;
+  min-height: 800px;
+
+  &__wrap {
+    padding-top: 60px;
+  }
+
+  &__contant {
+    display: flex;
+    gap: $gap-lg;
+  }
+
+
+  &__img-box {
+    max-height: 1200px;
+    // height: 80vh;
+    min-height: 400px;
+  }
+
+  &__img {
+    // height: 100%;
+
+    // height: 100%; // // height: 100vh;
+    // min-height: 400px;
+  }
+
+  &__actions {}
+}

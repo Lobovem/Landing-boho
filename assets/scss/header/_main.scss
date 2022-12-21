@@ -1,0 +1,7 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.main {
+  background-color: red;
+  height: 200px;
+}

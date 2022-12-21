@@ -1,0 +1,11 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+
+.layout {
+
+  &__xl {
+    width: min(100% - 40px, 1640px);
+    margin-inline: auto;
+  }
+}
