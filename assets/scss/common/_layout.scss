@@ -9,9 +9,11 @@
     @include md {
       width: min(100% - 40px, 1640px);
     }
+
     @include xx {
       width: min(100% - 20px, 1640px);
     }
+
     margin-inline: auto;
 
     &--alt {
@@ -41,7 +43,11 @@
         margin-top: -250px;
       }
 
-      @media (max-height: 750.8px) {
+      @media (min-height: 750.9px) {
+        // margin-top: -20px;
+      }
+
+      @media (max-height: 750.5px) {
         margin-top: -50px;
       }
     }

@@ -6,7 +6,7 @@
 
   @media (min-width: 1380.8px) {
     height: 100vh;
-    min-height: 720px;
+    min-height: 800px;
     max-height: 1200px;
   }
 
@@ -30,9 +30,11 @@
     display: flex;
 
     gap: 80px;
+
     @include xl {
       gap: $gap-xl;
     }
+
     @include lg {
       gap: $gap;
     }
@@ -45,6 +47,7 @@
     @include xl {
       margin-left: 60px;
     }
+
     @include lg {
       margin-left: -90px;
 
@@ -60,11 +63,11 @@
     }
 
     @media (max-height: 850.8px) {
-      max-height: 800px;
+      max-height: 850px;
     }
 
     @media (max-height: 800.8px) {
-      max-height: 700px;
+      // max-height: 800px;
     }
 
     @media (max-width: 1250.6px) and (min-width:1120px) {
@@ -110,6 +113,7 @@
     @include lg {
       max-width: 350px;
     }
+
     @include md {
       max-width: 275px;
     }
