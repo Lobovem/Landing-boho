@@ -3,8 +3,6 @@
 
 .footer {
 
-
-
   &__wrap {
     padding-bottom: 80px;
     padding-top: 54px;
@@ -21,7 +19,7 @@
     @include lg {
       flex-direction: column;
       padding-bottom: 20px;
-      gap: 15px;
+      gap: $gap-md;
     }
 
     @include sm {
@@ -51,15 +49,15 @@
   }
 
   &__decs {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: $font-weight-400;
+    font-size: $font-size-18;
     line-height: 160%;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #6D6D71;
 
     @include xl {
-      font-size: 16px;
+      font-size: $font-size-16;
     }
 
     @include lg {
@@ -68,7 +66,7 @@
     }
 
     @include sm {
-      font-size: 12px;
+      font-size: $font-size-12;
     }
   }
 }
