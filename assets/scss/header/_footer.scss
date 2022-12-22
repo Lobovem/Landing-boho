@@ -7,14 +7,24 @@
 
   &__wrap {
     padding-bottom: 80px;
+    padding-top: 54px;
+
     display: flex;
     gap: 60px;
     align-items: center;
 
+    @include xl {
+      padding-bottom: 40px;
+    }
+
     @include lg {
       flex-direction: column;
       padding-bottom: 20px;
-      gap: $gap-sm;
+      gap: 15px;
+    }
+
+    @include sm {
+      padding-top: 20px;
     }
   }
 

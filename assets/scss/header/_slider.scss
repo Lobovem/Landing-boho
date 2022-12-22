@@ -1,0 +1,147 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.slider {
+
+  position: relative;
+
+  @include md {
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 10;
+      width: 80px;
+      background: linear-gradient(270deg, #1F2D28 0%, rgba(31, 45, 40, 0) 100%);
+    }
+
+    @media (max-width: 399.8px) {
+      &::before {
+        display: none;
+      }
+
+    }
+
+
+
+  }
+
+  // overflow-x: hidden;
+
+  // @include md {
+  //   margin-right: -40px;
+  // }
+
+  // @media (max-width: 600.6px) {
+  //   margin-right: -20px;
+  // }
+
+
+  // @media (max-width: 399.6px) {
+  //   margin-right: 0;
+  // }
+
+
+  &__wrap {
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+
+    // display: flex;
+
+    margin-bottom: 38px;
+    // gap: $gap;
+
+  }
+
+  &__item {
+    // flex: 1;
+    padding: 10px 10px;
+    min-height: 177px;
+    background: #36403C;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0; //рекомендация
+
+    @media (max-width: 1600px) {
+      min-height: 119px;
+    }
+
+    @include md {
+      min-height: 107px;
+
+    }
+
+    @include xs {
+      min-height: 78px;
+
+    }
+  }
+
+  &__img {
+    max-width: 80%;
+
+    @media (max-width: 1100px) {
+      max-width: 90%;
+
+    }
+
+    @media (max-width: 810px) {
+      max-width: 100%;
+
+    }
+
+    @include md {
+      max-width: 80%;
+    }
+
+    @media (max-width: 520px) {
+      max-width: 90%;
+
+    }
+  }
+
+
+  .swiper {
+    // width: 100%;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 25px;
+
+    @include sm {
+      padding-bottom: 15px;
+    }
+  }
+
+  .swiper-slide {}
+
+  .swiper-pagination {}
+
+  // .swiper-horizontal>.swiper-pagination-bullets,
+  // .swiper-pagination-bullets.swiper-pagination-horizontal,
+  // .swiper-pagination-custom,
+  // .swiper-pagination-fraction {
+  //   bottom: -54px;
+  // }
+
+  .swiper-pagination-bullet {
+    background: #36403C;
+    height: 14px;
+    width: 14px;
+
+    @include sm {
+      height: 8px;
+      width: 8px;
+    }
+
+
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #FBBF2F; //TODO на последнем слайде нет размытия слева
+  }
+}
