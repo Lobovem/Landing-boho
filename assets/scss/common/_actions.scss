@@ -5,16 +5,18 @@
   max-width: 790px;
 
   @include xl-min {
-    grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
-    height: 100vh;
+    // grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
+
   }
 
   @include lg-min {
-    display: grid;
-    align-items: flex-start;
+    // display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     gap: $gap;
-    grid-template-rows: 0.6fr 0.3fr 0.65fr 1fr;
+    // grid-template-rows: 0.6fr 0.3fr 0.65fr 1fr;
     justify-items: center;
   }
 
@@ -28,6 +30,17 @@
   &__logo {
     max-width: 127px;
     padding-top: 60px;
+
+    @media (max-height: 850.8px) {
+      margin-bottom: 20px;
+
+    }
+
+
+
+    @include ul {
+      margin-bottom: 80px;
+    }
 
     @include lg {
       max-width: 84px;
@@ -50,6 +63,13 @@
     font-size: $font-size-40;
     font-weight: $font-weight-600;
     line-height: 48px;
+
+
+    @media (max-width: 1600.8px) {
+      padding-top: 10px;
+
+
+    }
 
     @include lg {
       margin-bottom: 20px;
@@ -87,6 +107,28 @@
     font-weight: $font-weight-400;
     font-style: normal;
     line-height: 100%;
+
+    // @media (max-height: 800.8px) {
+    //   font-size: $font-size-71;
+
+
+    // }
+
+    @media (max-width: 1600.8px) {
+      margin-bottom: 30px;
+
+
+    }
+
+    @include ul {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1050.8px) {
+      font-size: 44px;
+
+
+    }
 
     @include lg {
       max-width: 440px;
@@ -136,6 +178,8 @@
     @media (max-width: 576.8px) {
       width: 100%;
     }
+
+
   }
 
   &__link {
