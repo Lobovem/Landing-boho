@@ -8,7 +8,7 @@
     width: min(100% - 80px, 1640px);
     margin-inline: auto;
 
-    @include sm {
+    @include md {
       width: min(100% - 40px, 1640px);
     }
 
@@ -27,6 +27,11 @@
       @media (max-width: 1380.8px) {
         margin-top: -40px;
 
+
+      }
+
+      @media (max-width: 576.8px) {
+        margin-top: 0;
 
       }
     }

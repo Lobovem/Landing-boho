@@ -71,6 +71,13 @@
       line-height: 24px;
       margin-bottom: 20px;
     }
+
+    @include xs {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 10px;
+
+    }
   }
 
   &__desc {
@@ -98,10 +105,20 @@
 
     @include lg {
       margin-bottom: 20px;
+      max-width: 440px;
+
     }
 
     @include md {
       font-size: 38px;
+
+    }
+
+    @include xs {
+      font-size: 33px;
+      margin-bottom: 10px;
+      max-width: 390px;
+
 
     }
   }
@@ -120,6 +137,10 @@
     @include lg {
       min-height: 62px;
       width: 235px;
+    }
+
+    @media (max-width: 576.8px) {
+      width: 100%;
     }
   }
 
@@ -160,6 +181,16 @@
       line-height: 22px;
       min-height: 56px;
       width: 229px;
+    }
+
+    @media (max-width: 576.8px) {
+      width: 100%;
+
+    }
+
+    @include xs {
+      font-size: 20px;
+      line-height: 24px;
     }
 
   }

@@ -23,7 +23,12 @@
     // }
   }
 
-  &__wrap {}
+  &__wrap {
+    @media (max-width: 576.8px) {
+      margin-bottom: 24px;
+
+    }
+  }
 
   &__contant {
     display: flex;
@@ -51,16 +56,22 @@
     // min-height: 400px;
     max-height: 100vh;
 
-    @include lg-min {}
 
     @include xl {
       margin-left: 60px;
     }
 
     @include lg {
-      flex: 1;
-      margin-left: -40px;
+      margin-left: -90px;
 
+      @include lg-min {
+        flex: 1;
+
+      }
+    }
+
+    @media (max-width: 576.8px) {
+      display: none;
     }
 
   }
