@@ -27,6 +27,8 @@
   }
 
   &__item {
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +54,9 @@
   }
 
   &__img {
+
+
+
     max-width: 80%;
 
     @include md {
@@ -68,6 +73,7 @@
 
     @media (max-width: 520px) {
       max-width: 90%;
+      height: 50px;
     }
   }
 
