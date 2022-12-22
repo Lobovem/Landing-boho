@@ -15,6 +15,22 @@
     @include xx {
       width: min(100% - 20px, 1640px);
     }
+
+    &--alt {
+      margin-top: -140px;
+
+      @include xl {
+        margin-top: -140px;
+
+      }
+
+      @media (max-width: 1380.8px) {
+        margin-top: -40px;
+
+
+      }
+    }
   }
+
 
 }

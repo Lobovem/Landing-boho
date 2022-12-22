@@ -2,17 +2,21 @@
 @use "../mixins" as *;
 
 .header {
-  background-color: red;
-  min-height: 720px;
-  height: 100vh;
-  max-height: 1200px;
+
   // max-height: 1200px;
   // min-height: 800px;
+  @media (min-width: 1380.8px) {
+    min-height: 720px;
+    height: 100vh;
+    max-height: 1200px;
+
+  }
 
   &__decor-main {
     position: absolute;
     z-index: 0;
-    width: 100vw; //TODO посмотреть размер фона
+    width: 100%; //TODO посмотреть размер фона
+    // height: 100vh;
 
     // @include xl {
     //   width: 102vw;
@@ -28,7 +32,16 @@
     position: relative;
     z-index: 3;
 
-    @include xl {}
+    @include xl {
+      gap: 40px;
+
+    }
+
+    @include lg {
+      gap: 20px;
+
+    }
+
   }
 
 
@@ -38,9 +51,18 @@
     // min-height: 400px;
     max-height: 100vh;
 
+    @include lg-min {}
+
     @include xl {
-      margin-left: 70px;
+      margin-left: 60px;
     }
+
+    @include lg {
+      flex: 1;
+      margin-left: -40px;
+
+    }
+
   }
 
   &__img {
@@ -56,6 +78,15 @@
     max-width: 100%;
     max-height: 100%;
     display: block;
+
+    @include lg {
+      max-width: 350px;
+    }
+
+    @include md {
+      max-width: 275px;
+    }
+
   }
 
   &__actions {}

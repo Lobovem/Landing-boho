@@ -10,6 +10,10 @@
     @include xl {
       max-width: 371px;
     }
+
+    @include lg {
+      max-width: 155px;
+    }
   }
 
   &__right {
@@ -19,6 +23,10 @@
 
     @include xl {
       max-width: 266px;
+    }
+
+    @include lg {
+      max-width: 120px;
     }
 
   }

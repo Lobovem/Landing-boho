@@ -2,17 +2,32 @@
 @use "../mixins" as *;
 
 .actions {
-  // display: flex;
-  // flex-direction: column;
-  align-items: flex-start;
-  justify-items: center;
-  display: grid;
-  grid-template-rows: 0.8fr 0.4fr 0.8fr 1fr;
+
   max-width: 790px;
 
-  @include xl-min {}
+  @include xl-min {
+    // gap: $gap;
+    grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
 
 
+  }
+
+  @include lg-min {
+    // gap: $gap;
+    align-items: flex-start;
+    justify-items: center;
+    display: grid;
+    gap: $gap;
+    grid-template-rows: 0.6fr 0.3fr 0.65fr 1fr;
+
+  }
+
+  @include lg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 
 
@@ -22,8 +37,11 @@
 
     max-width: 127px;
 
-    @include xl {
-      // margin-bottom: 50px;
+    @include lg {
+      margin-bottom: 30px;
+      max-width: 84px;
+      padding-top: 40px;
+
     }
   }
 
@@ -42,7 +60,17 @@
       line-height: 39px;
     }
 
-    @include xl {}
+    @media (max-width: 1250.8px) {
+      font-size: 26px;
+
+
+    }
+
+    @include lg {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   &__desc {
@@ -62,6 +90,20 @@
     @media (max-width: 1600.8px) {
       font-size: 71px;
     }
+
+    @media (max-width: 1250.8px) {
+      font-size: 50px;
+
+    }
+
+    @include lg {
+      margin-bottom: 20px;
+    }
+
+    @include md {
+      font-size: 38px;
+
+    }
   }
 
   &__link-box {
@@ -75,7 +117,10 @@
       width: 307px;
     }
 
-    @include xl {}
+    @include lg {
+      min-height: 62px;
+      width: 235px;
+    }
   }
 
   &__link {
@@ -103,6 +148,18 @@
       line-height: 29px;
       min-height: 70px;
       width: 301px;
+    }
+
+    @media (max-width: 1250.8px) {
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    @include lg {
+      font-size: 18px;
+      line-height: 22px;
+      min-height: 56px;
+      width: 229px;
     }
 
   }
