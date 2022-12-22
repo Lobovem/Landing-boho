@@ -19,11 +19,6 @@
       background: linear-gradient(270deg, #1f2d28 0%, rgba(31, 45, 40, 0) 100%);
     }
 
-    @media (max-width: 399.8px) {
-      &::before {
-        display: none;
-      }
-    }
   }
 
 
@@ -46,6 +41,7 @@
     @include md {
       min-height: 107px;
     }
+
     @include xs {
       min-height: 78px;
     }
