@@ -3,7 +3,7 @@
 
 .actions {
   // max-width: 790px;
-  margin-right: 40px;
+  // margin-right: 40px;
 
   @include xl-min {
     // grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
@@ -37,13 +37,13 @@
   &__logo {
     max-width: 127px;
     padding-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     @include ul {}
 
     @include lg {
       max-width: 84px;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
       padding-top: 40px;
     }
 
@@ -113,6 +113,23 @@
       margin-bottom: 20px;
     }
 
+    @media (max-width: 1350.8px) {
+      font-size: $font-size-44;
+    }
+
+    @media (max-width: 1600.8px) {
+      margin-bottom: 30px;
+      font-size: $font-size-71;
+    }
+
+    @media (max-width: 1250.8px) {
+      font-size: $font-size-50;
+    }
+
+    @media (max-width: 1100.8px) {
+      font-size: $font-size-38;
+    }
+
     @include lg {
       max-width: 440px;
       margin-bottom: 20px;
@@ -127,23 +144,6 @@
       margin-bottom: 10px;
 
       font-size: $font-size-33;
-    }
-
-
-    @media (max-width: 1600.8px) {
-      margin-bottom: 30px;
-    }
-
-    @media (max-width: 1350.8px) {
-      font-size: 44px;
-    }
-
-    @media (max-width: 1600.8px) {
-      font-size: $font-size-71;
-    }
-
-    @media (max-width: 1250.8px) {
-      font-size: $font-size-50;
     }
   }
 
@@ -167,7 +167,7 @@
       min-height: 76px;
     }
 
-    @media (max-width: 576.8px) {
+    @media (max-width: 585.2px) {
       width: 100%;
     }
   }
@@ -227,7 +227,7 @@
       line-height: 29px;
     }
 
-    @media (max-width: 576.8px) {
+    @media (max-width: 585.2px) {
       width: 100%;
     }
   }

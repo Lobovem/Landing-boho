@@ -10,9 +10,11 @@
     @include xl {
       max-width: 371px;
     }
+
     @include lg {
       max-width: 155px;
     }
+
     @include xs {
       max-width: 118px;
     }
@@ -26,9 +28,11 @@
     @include xl {
       max-width: 266px;
     }
+
     @include lg {
       max-width: 120px;
     }
+
     @include xs {
       max-width: 98px;
     }
@@ -40,7 +44,7 @@
     background-image: url(../img/background-main-foto.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: 100%;
+    background-size: cover;
 
     @media (max-width: 620.8px) {
       background-position: 50% 0;
