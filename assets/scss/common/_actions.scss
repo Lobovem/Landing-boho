@@ -6,14 +6,10 @@
   max-width: 790px;
 
   @include xl-min {
-    // gap: $gap;
     grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
-
-
   }
 
   @include lg-min {
-    // gap: $gap;
     align-items: flex-start;
     justify-items: center;
     display: grid;
@@ -29,19 +25,14 @@
     align-items: center;
   }
 
-
-
   &__logo {
-    // margin-bottom: 94px;
     padding-top: 60px;
-
     max-width: 127px;
 
     @include lg {
       margin-bottom: 30px;
       max-width: 84px;
       padding-top: 40px;
-
     }
 
     @include md {
@@ -50,34 +41,33 @@
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: $font-weight-600;
+    font-size: $font-size-40;
     line-height: 48px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #EBBC44;
+    color: $color-accent;
     text-shadow: 0px 0px 0px #FCC931;
-    // margin-bottom: 40px;
 
     @media (max-width: 1600.8px) {
-      font-size: 32px;
+      font-size: $font-size-32;
       line-height: 39px;
     }
 
     @media (max-width: 1250.8px) {
-      font-size: 26px;
+      font-size: $font-size-26;
 
 
     }
 
     @include lg {
-      font-size: 20px;
+      font-size: $font-size-20;
       line-height: 24px;
       margin-bottom: 20px;
     }
 
     @include xs {
-      font-size: 15px;
+      font-size: $font-size-15;
       line-height: 18px;
       margin-bottom: 10px;
 
@@ -87,23 +77,20 @@
   &__desc {
     font-family: 'Begika';
     font-style: normal;
-    font-weight: 400;
-    font-size: 90px;
+    font-weight: $font-weight-400;
+    font-size: $font-size-90;
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
-    // margin-bottom: 62px;
-
-    @include xl {}
 
     @media (max-width: 1600.8px) {
-      font-size: 71px;
+      font-size: $font-size-71;
     }
 
     @media (max-width: 1250.8px) {
-      font-size: 50px;
+      font-size: $font-size-50;
 
     }
 
@@ -114,12 +101,12 @@
     }
 
     @include md {
-      font-size: 38px;
+      font-size: $font-size-38;
 
     }
 
     @include xs {
-      font-size: 33px;
+      font-size: $font-size-33;
       margin-bottom: 10px;
       max-width: 390px;
 
@@ -155,7 +142,7 @@
     align-items: center;
     justify-content: center;
     font-weight: $font-weight-800;
-    font-size: 34px;
+    font-size: $font-size-34;
     line-height: 41px;
     text-align: center;
     letter-spacing: 0.15em;
@@ -173,19 +160,19 @@
     @include xl {}
 
     @media (max-width: 1600.8px) {
-      font-size: 24px;
+      font-size: $font-size-24;
       line-height: 29px;
       min-height: 70px;
       width: 301px;
     }
 
     @media (max-width: 1250.8px) {
-      font-size: 20px;
+      font-size: $font-size-20;
       line-height: 29px;
     }
 
     @include lg {
-      font-size: 18px;
+      font-size: $font-size-18;
       line-height: 22px;
       min-height: 56px;
       width: 229px;
@@ -197,7 +184,7 @@
     }
 
     @include xs {
-      font-size: 20px;
+      font-size: $font-size-20;
       line-height: 24px;
     }
 
