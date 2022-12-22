@@ -5,61 +5,53 @@
   position: relative;
 
   @media (min-width: 1380.8px) {
-    min-height: 720px;
     height: 100vh;
+    min-height: 720px;
     max-height: 1200px;
-
   }
 
   &__wrap {
     position: relative;
     z-index: 5;
 
-    @media (max-width: 576.8px) {
-      margin-bottom: 24px;
-
-    }
-
     @include md {
       margin-bottom: 16px;
+    }
 
+    @media (max-width: 576.8px) {
+      margin-bottom: 24px;
     }
   }
 
   &__contant {
-    display: flex;
-    gap: 80px;
     position: relative;
     z-index: 3;
 
+    display: flex;
+
+    gap: 80px;
     @include xl {
       gap: $gap-xl;
-
     }
-
     @include lg {
       gap: $gap;
-
     }
-
   }
 
 
   &__img-box {
     position: relative;
-    max-height: 100vh;
 
+    max-height: 100vh;
 
     @include xl {
       margin-left: 60px;
     }
-
     @include lg {
       margin-left: -90px;
 
       @include lg-min {
         flex: 1;
-
       }
     }
 
@@ -70,43 +62,42 @@
 
     &::before {
       position: absolute;
-      content: "";
-      bottom: 0;
-      height: 150px;
-      left: 0;
-      right: 0;
       z-index: 5;
-      background: linear-gradient(180deg, rgba(15, 24, 21, 0) 0%, #1F2D28 100%);
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 150px;
+
+      content: "";
+
+      background: linear-gradient(180deg, rgba(15, 24, 21, 0) 0%, #1f2d28 100%);
 
       @media (max-width: 1380.8px) {
         height: 70px;
-
       }
     }
-
   }
 
   &__img {
-
     position: relative;
+
+    display: block;
+
     max-width: 100%;
     max-height: 100%;
-    display: block;
 
     @include lg {
       max-width: 350px;
     }
-
     @include md {
       max-width: 275px;
     }
-
   }
 
 
   &__item-wrap {
     position: relative;
     z-index: 3;
-
   }
 }

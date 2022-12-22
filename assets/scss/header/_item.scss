@@ -2,101 +2,92 @@
 @use "../mixins" as *;
 
 .item {
-
   &__wrap {
-    gap: $gap;
     position: relative;
     z-index: 5;
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
     margin-bottom: 90px;
 
+    gap: $gap;
+    grid-template-columns: repeat(4, 1fr);
     @include xl {
       margin-bottom: 54px;
-
     }
-
     @include lg {
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include md {
       margin-bottom: 20px;
     }
-
     @include xx {
-      gap: $gap-sm;
       margin-bottom: 24px;
-    }
 
+      gap: $gap-sm;
+    }
   }
 
   &__box-first {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
-    height: 100%;
+    justify-content: center;
 
+    height: 100%;
   }
 
   &__box-second {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
+
     height: 100%;
   }
 
   &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: $gap-xl;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(18.5px);
-
-    border-radius: 25px;
     padding: 10px 10px 10px 10px;
 
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(18.5px);
+    gap: $gap-xl;
     @include xl {
       min-height: 280px;
     }
-
     @include sm {
       min-height: 180px;
+
       gap: $gap;
     }
-
     @include xx {
       min-height: 138px;
-
     }
   }
 
   &__img {
-    max-width: 80px;
     display: flex;
+
+    max-width: 80px;
 
     @include xl {
       max-width: 70px;
     }
-
     @include sm {
       max-width: 40px;
     }
-
     @include xx {
       max-width: 35px;
     }
   }
 
   &__title {
-    font-weight: $font-weight-500;
-    font-size: $font-size-32;
-    line-height: 120%;
     max-width: 254px;
-
 
     text-align: center;
     letter-spacing: 0.05em;
@@ -104,22 +95,24 @@
 
     color: $color-white;
 
+    font-size: $font-size-32;
+    font-weight: $font-weight-500;
+    line-height: 120%;
+
     @include xl {
-      font-size: $font-size-24;
       max-width: 191px;
-    }
 
+      font-size: $font-size-24;
+    }
     @include sm {
-      font-size: $font-size-16;
       max-width: 127px;
-    }
 
+      font-size: $font-size-16;
+    }
     @include xx {
-      font-size: $font-size-14;
       max-width: 111px;
+
+      font-size: $font-size-14;
     }
-
   }
-
-
 }

@@ -2,52 +2,63 @@
 @use "../mixins" as *;
 
 .actions {
-
   max-width: 790px;
 
   @include xl-min {
     grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
   }
-
   @include lg-min {
-    align-items: flex-start;
-    justify-items: center;
     display: grid;
+    align-items: flex-start;
+
     gap: $gap;
     grid-template-rows: 0.6fr 0.3fr 0.65fr 1fr;
-
+    justify-items: center;
   }
-
   @include lg {
-    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex: 1;
+    flex-direction: column;
   }
 
   &__logo {
-    padding-top: 60px;
     max-width: 127px;
+    padding-top: 60px;
 
     @include lg {
-      margin-bottom: 30px;
       max-width: 84px;
+      margin-bottom: 30px;
       padding-top: 40px;
     }
-
     @include md {
       margin-bottom: 20px;
     }
   }
 
   &__title {
-    font-weight: $font-weight-600;
-    font-size: $font-size-40;
-    line-height: 48px;
     text-align: center;
     letter-spacing: 0.1em;
+
     color: $color-accent;
-    text-shadow: 0px 0px 0px #FCC931;
+    text-shadow: 0 0 0 #fcc931;
+
+    font-size: $font-size-40;
+    font-weight: $font-weight-600;
+    line-height: 48px;
+
+    @include lg {
+      margin-bottom: 20px;
+
+      font-size: $font-size-20;
+      line-height: 24px;
+    }
+    @include xs {
+      margin-bottom: 10px;
+
+      font-size: $font-size-15;
+      line-height: 18px;
+    }
 
     @media (max-width: 1600.8px) {
       font-size: $font-size-32;
@@ -56,34 +67,35 @@
 
     @media (max-width: 1250.8px) {
       font-size: $font-size-26;
-
-
-    }
-
-    @include lg {
-      font-size: $font-size-20;
-      line-height: 24px;
-      margin-bottom: 20px;
-    }
-
-    @include xs {
-      font-size: $font-size-15;
-      line-height: 18px;
-      margin-bottom: 10px;
-
     }
   }
 
   &__desc {
-    font-family: 'Begika';
-    font-style: normal;
-    font-weight: $font-weight-400;
-    font-size: $font-size-90;
-    line-height: 100%;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #FFFFFF;
+
+    color: #ffffff;
+
+    font-family: "Begika";
+    font-size: $font-size-90;
+    font-weight: $font-weight-400;
+    font-style: normal;
+    line-height: 100%;
+
+    @include lg {
+      max-width: 440px;
+      margin-bottom: 20px;
+    }
+    @include md {
+      font-size: $font-size-38;
+    }
+    @include xs {
+      max-width: 390px;
+      margin-bottom: 10px;
+
+      font-size: $font-size-33;
+    }
 
     @media (max-width: 1600.8px) {
       font-size: $font-size-71;
@@ -91,45 +103,27 @@
 
     @media (max-width: 1250.8px) {
       font-size: $font-size-50;
-
-    }
-
-    @include lg {
-      margin-bottom: 20px;
-      max-width: 440px;
-
-    }
-
-    @include md {
-      font-size: $font-size-38;
-
-    }
-
-    @include xs {
-      font-size: $font-size-33;
-      margin-bottom: 10px;
-      max-width: 390px;
-
-
     }
   }
 
   &__link-box {
     position: relative;
     z-index: 10;
-    padding: 3px;
-    min-height: 92px;
-    width: 392px;
-    background: linear-gradient(93.73deg, #FFF387 4%, #D7A82E 30%, #FFF387 45%, #F4C449 70%, #FFF387 100%);
 
-    @media (max-width: 1600.8px) {
-      min-height: 76px;
-      width: 307px;
-    }
+    width: 392px;
+    min-height: 92px;
+    padding: 3px;
+
+    background: linear-gradient(93.73deg, #fff387 4%, #d7a82e 30%, #fff387 45%, #f4c449 70%, #fff387 100%);
 
     @include lg {
-      min-height: 62px;
       width: 235px;
+      min-height: 62px;
+    }
+
+    @media (max-width: 1600.8px) {
+      width: 307px;
+      min-height: 76px;
     }
 
     @media (max-width: 576.8px) {
@@ -141,29 +135,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: $font-weight-800;
-    font-size: $font-size-34;
-    line-height: 41px;
+
+    width: 386px;
+    min-height: 86px;
+    padding: 10px;
+
+    cursor: pointer;
     text-align: center;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+
+    color: #0f101b;
     border: none;
-    cursor: pointer;
+    background: linear-gradient(93.73deg, #ffc93d 0.41%, #cc9f2a 31.75%, #f5c64e 67.8%, #f0bc38 93.39%);
 
-    color: #0F101B;
-    padding: 10px;
-    min-height: 86px;
-    width: 386px;
+    font-size: $font-size-34;
+    font-weight: $font-weight-800;
+    line-height: 41px;
 
-    background: linear-gradient(93.73deg, #FFC93D 0.41%, #CC9F2A 31.75%, #F5C64E 67.8%, #F0BC38 93.39%);
+    @include xl {
+    }
+    @include lg {
+      width: 229px;
+      min-height: 56px;
 
-    @include xl {}
+      font-size: $font-size-18;
+      line-height: 22px;
+    }
+    @include xs {
+      font-size: $font-size-20;
+      line-height: 24px;
+    }
 
     @media (max-width: 1600.8px) {
+      width: 301px;
+      min-height: 70px;
+
       font-size: $font-size-24;
       line-height: 29px;
-      min-height: 70px;
-      width: 301px;
     }
 
     @media (max-width: 1250.8px) {
@@ -171,22 +180,8 @@
       line-height: 29px;
     }
 
-    @include lg {
-      font-size: $font-size-18;
-      line-height: 22px;
-      min-height: 56px;
-      width: 229px;
-    }
-
     @media (max-width: 576.8px) {
       width: 100%;
-
     }
-
-    @include xs {
-      font-size: $font-size-20;
-      line-height: 24px;
-    }
-
   }
 }

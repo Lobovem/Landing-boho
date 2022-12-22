@@ -3,39 +3,31 @@
 
 
 .layout {
-
   &__main {
     width: min(100% - 80px, 1640px);
-    margin-inline: auto;
 
     @include md {
       width: min(100% - 40px, 1640px);
     }
-
     @include xx {
       width: min(100% - 20px, 1640px);
     }
+    margin-inline: auto;
 
     &--alt {
       margin-top: -140px;
 
       @include xl {
         margin-top: -140px;
-
       }
 
       @media (max-width: 1380.8px) {
         margin-top: -40px;
-
-
       }
 
       @media (max-width: 576.8px) {
         margin-top: 0;
-
       }
     }
   }
-
-
 }
