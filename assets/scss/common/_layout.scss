@@ -9,22 +9,20 @@
     @include md {
       width: min(100% - 40px, 1640px);
     }
-
     @include xx {
       width: min(100% - 20px, 1640px);
     }
-
     margin-inline: auto;
 
     &--alt {
       margin-top: -140px;
 
-      @media (max-width: 1500.8px) {
-        margin-top: -150px;
-      }
-
       @include xl {
         margin-top: -140px;
+      }
+
+      @media (max-width: 1500.8px) {
+        margin-top: -150px;
       }
 
       @media (max-width: 1380.8px) {
@@ -37,21 +35,15 @@
 
       @media (min-height: 1000.9px) {
         margin-top: -150px;
-
       }
 
       @media (min-height: 1100.9px) {
         margin-top: -250px;
-
       }
 
       @media (max-height: 750.8px) {
         margin-top: -50px;
-
-
-
       }
-
     }
   }
 }
