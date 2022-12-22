@@ -124,6 +124,8 @@
   }
 
   &__link-box {
+    position: relative;
+    z-index: 10;
     padding: 3px;
     min-height: 92px;
     width: 392px;

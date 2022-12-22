@@ -7,7 +7,7 @@
   &__wrap {
     gap: $gap;
     position: relative;
-    z-index: 3;
+    z-index: 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 90px;
