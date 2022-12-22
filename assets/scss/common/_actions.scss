@@ -2,11 +2,13 @@
 @use "../mixins" as *;
 
 .actions {
-  max-width: 790px;
+  // max-width: 790px;
+  margin-right: 40px;
 
   @include xl-min {
     // grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
   }
+
   @include lg-min {
     // display: grid;
     display: flex;
@@ -17,32 +19,41 @@
     // grid-template-rows: 0.6fr 0.3fr 0.65fr 1fr;
     justify-items: center;
   }
+
   @include lg {
     display: flex;
     align-items: center;
-    flex: 1;
+    // flex: 1;
     flex-direction: column;
+    margin-right: 0;
   }
+
+  @media (max-width: 585.8px) {
+    // justify-content: center;
+  }
+
+
 
   &__logo {
     max-width: 127px;
     padding-top: 60px;
+    margin-bottom: 40px;
 
-    @include ul {
-      margin-bottom: 80px;
-    }
+    @include ul {}
+
     @include lg {
       max-width: 84px;
       margin-bottom: 30px;
       padding-top: 40px;
     }
+
     @include md {
       margin-bottom: 20px;
     }
 
-    @media (max-height: 850.8px) {
-      margin-bottom: 20px;
-    }
+    // @media (max-height: 850.8px) {
+    //   margin-bottom: 20px;
+    // }
   }
 
   &__title {
@@ -62,6 +73,7 @@
       font-size: $font-size-20;
       line-height: 24px;
     }
+
     @include xs {
       margin-bottom: 10px;
 
@@ -79,7 +91,7 @@
       line-height: 39px;
     }
 
-    @media (max-width: 1250.8px) {
+    @media (max-width: 1350.8px) {
       font-size: $font-size-26;
     }
   }
@@ -100,13 +112,16 @@
     @include ul {
       margin-bottom: 20px;
     }
+
     @include lg {
       max-width: 440px;
       margin-bottom: 20px;
     }
+
     @include md {
       font-size: $font-size-38;
     }
+
     @include xs {
       max-width: 390px;
       margin-bottom: 10px;
@@ -119,7 +134,7 @@
       margin-bottom: 30px;
     }
 
-    @media (max-width: 1050.8px) {
+    @media (max-width: 1350.8px) {
       font-size: 44px;
     }
 
@@ -180,8 +195,8 @@
     font-weight: $font-weight-800;
     line-height: 41px;
 
-    @include xl {
-    }
+    @include xl {}
+
     @include lg {
       width: 229px;
       min-height: 56px;
@@ -189,6 +204,7 @@
       font-size: $font-size-18;
       line-height: 22px;
     }
+
     @include xs {
       font-size: $font-size-20;
       line-height: 24px;

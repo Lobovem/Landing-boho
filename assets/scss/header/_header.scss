@@ -4,11 +4,7 @@
 .header {
   position: relative;
 
-  @media (min-width: 1380.8px) {
-    height: 100vh;
-    min-height: 800px;
-    max-height: 1200px;
-  }
+
 
   &__wrap {
     position: relative;
@@ -27,61 +23,90 @@
     position: relative;
     z-index: 3;
 
-    display: flex;
 
+
+    @media (min-width: 1100.8px) {
+      height: 100vh;
+      min-height: 850px;
+      max-height: 1200px;
+    }
+
+    display: flex;
+    align-items: start;
     gap: 80px;
 
     @include xl {
       gap: $gap-xl;
     }
 
+    @include lg-min {
+      justify-content: space-between;
+
+    }
+
     @include lg {
+      justify-content: space-around;
+
       gap: $gap;
+    }
+
+    @include sm {
+      gap: $gap-sm;
+
+    }
+
+    @media (max-width: 585.8px) {
+      justify-content: center;
     }
   }
 
 
+  // &__img-box {
+  //   position: relative;
+
+  //   @include xl {
+  //    
+  //   }
+
+  //   @include lg {
+  //     margin-left: -90px;
+
+  //     @include lg-min {
+  //       flex: 1;
+  //     }
+  //   }
+
+
+
+  //   @media (max-height: 1000.8px) {
+  //     max-height: 900px;
+  //   }
+
+  //   @media (max-height: 850.8px) {
+  //     max-height: 850px;
+  //   }
+
+  //   @media (max-height: 800.8px) {
+  //     // max-height: 800px;
+  //   }
+
+  //   @media (max-width: 1250.6px) and (min-width:1120px) {
+  //     width: 50%;
+  //   }
+
+
+
+  //   
+
+
+
+
+  //  
+  // }
+
   &__img-box {
+
     position: relative;
-
-    @include xl {
-      margin-left: 60px;
-    }
-
-    @include lg {
-      margin-left: -90px;
-
-      @include lg-min {
-        flex: 1;
-      }
-    }
-
-
-
-    @media (max-height: 1000.8px) {
-      max-height: 900px;
-    }
-
-    @media (max-height: 850.8px) {
-      max-height: 850px;
-    }
-
-    @media (max-height: 800.8px) {
-      // max-height: 800px;
-    }
-
-    @media (max-width: 1250.6px) and (min-width:1120px) {
-      width: 50%;
-    }
-
-
-
-    @media (max-width: 576.8px) {
-      display: none;
-    }
-
-
-
 
     &::before {
       position: absolute;
@@ -96,19 +121,30 @@
 
       background: linear-gradient(180deg, rgba(15, 24, 21, 0) 0%, #1f2d28 100%);
 
-      @media (max-width: 1380.8px) {
-        height: 70px;
-      }
+      // @media (max-width: 1380.8px) {
+      //   height: 70px;
+      // }
     }
   }
 
   &__img {
     position: relative;
+    height: auto;
 
-    display: block;
 
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 600px;
+
+
+
+
+    // @media (min-height: 1000.8px) {
+    //   max-width: 100%;
+    // }
+
+    @include xl {
+      max-width: 550px;
+      margin-left: 60px;
+    }
 
     @include lg {
       max-width: 350px;
@@ -116,7 +152,17 @@
 
     @include md {
       max-width: 275px;
+      margin-left: -72px;
+
     }
+
+    @media (max-width: 585.8px) {
+      display: none;
+      margin-left: 0px;
+
+    }
+
+
   }
 
 
