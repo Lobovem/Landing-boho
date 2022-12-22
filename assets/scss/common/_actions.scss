@@ -2,9 +2,12 @@
 @use "../mixins" as *;
 
 .actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  display: grid;
+  grid-template-rows: 0.8fr 0.4fr 0.8fr 1fr;
   max-width: 790px;
 
   @include xl-min {}
@@ -14,13 +17,13 @@
 
 
   &__logo {
-    margin-bottom: 94px;
+    // margin-bottom: 94px;
     padding-top: 60px;
 
     max-width: 127px;
 
     @include xl {
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
     }
   }
 
@@ -32,13 +35,14 @@
     letter-spacing: 0.1em;
     color: #EBBC44;
     text-shadow: 0px 0px 0px #FCC931;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
-    @include xl {
+    @media (max-width: 1600.8px) {
       font-size: 32px;
       line-height: 39px;
-
     }
+
+    @include xl {}
   }
 
   &__desc {
@@ -51,9 +55,11 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 62px;
+    // margin-bottom: 62px;
 
-    @include xl {
+    @include xl {}
+
+    @media (max-width: 1600.8px) {
       font-size: 71px;
     }
   }
@@ -64,10 +70,12 @@
     width: 392px;
     background: linear-gradient(93.73deg, #FFF387 4%, #D7A82E 30%, #FFF387 45%, #F4C449 70%, #FFF387 100%);
 
-    @include xl {
+    @media (max-width: 1600.8px) {
       min-height: 76px;
       width: 307px;
     }
+
+    @include xl {}
   }
 
   &__link {
@@ -88,11 +96,14 @@
 
     background: linear-gradient(93.73deg, #FFC93D 0.41%, #CC9F2A 31.75%, #F5C64E 67.8%, #F0BC38 93.39%);
 
-    @include xl {
+    @include xl {}
+
+    @media (max-width: 1600.8px) {
       font-size: 24px;
       line-height: 29px;
       min-height: 70px;
       width: 301px;
     }
+
   }
 }

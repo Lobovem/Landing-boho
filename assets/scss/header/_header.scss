@@ -2,7 +2,10 @@
 @use "../mixins" as *;
 
 .header {
-  min-height: 100vh;
+  background-color: red;
+  min-height: 720px;
+  height: 100vh;
+  max-height: 1200px;
   // max-height: 1200px;
   // min-height: 800px;
 
@@ -33,6 +36,7 @@
     // max-height: 1200px;
     // height: 80vh;
     // min-height: 400px;
+    max-height: 100vh;
 
     @include xl {
       margin-left: 70px;
@@ -50,6 +54,7 @@
     // min-height: 400px;
     // width: 100%;
     max-width: 100%;
+    max-height: 100%;
     display: block;
   }
 
