@@ -43,6 +43,10 @@
       padding-top: 40px;
 
     }
+
+    @include md {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {

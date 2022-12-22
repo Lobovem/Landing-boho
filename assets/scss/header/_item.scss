@@ -12,8 +12,17 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 90px;
 
+    @include xl {
+      margin-bottom: 54px;
+
+    }
+
     @include lg {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+      margin-bottom: 20px;
     }
 
     @include xx {

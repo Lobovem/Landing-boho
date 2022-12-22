@@ -14,7 +14,8 @@
     align-items: center;
 
     @include xl {
-      padding-bottom: 40px;
+      padding-bottom: 30px;
+      gap: $gap;
     }
 
     @include lg {
@@ -29,17 +30,22 @@
   }
 
   &__img {
-    max-height: 176px;
+    max-width: 213px;
 
     @include xl {
-      max-height: 168px;
+      max-width: 203px;
     }
 
     @include lg {
       order: 1;
     }
 
-    @include sm {
+    @include md {
+      max-width: 125px;
+
+    }
+
+    @include xs {
       max-width: 103px;
     }
   }
