@@ -100,20 +100,13 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    color: #ffffff;
+    color: $color-white;
 
     font-family: "Begika";
     font-size: $font-size-90;
     font-weight: $font-weight-400;
     font-style: normal;
     line-height: 100%;
-
-    // @media (max-height: 800.8px) {
-    //   font-size: $font-size-71;
-
-
-    // }
-
 
 
     @media (max-width: 1600.8px) {
@@ -208,7 +201,8 @@
     transition: 0.2s linear;
 
     &:hover {
-      color: #463202;
+      // color: #463202;
+      background: #ffc93d;
     }
 
     @include xl {}
