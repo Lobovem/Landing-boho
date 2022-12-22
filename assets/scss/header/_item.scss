@@ -2,7 +2,6 @@
 @use "../mixins" as *;
 
 .item {
-  // display: flex;
 
   &__wrap {
     gap: $gap;
@@ -44,29 +43,24 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100%; //TODO Уточнить как лучше с центровкой содержимового внутри
+    height: 100%;
   }
 
   &__box {
 
     min-height: 320px;
-    // flex: 1;
-    // flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: flex-start;
     gap: $gap-xl;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(18.5px);
-    /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 25px;
     padding: 10px 10px 10px 10px;
 
     @include xl {
       min-height: 280px;
-      // padding-top: 30px;
     }
 
     @include sm {
@@ -98,8 +92,8 @@
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: $font-weight-500;
+    font-size: $font-size-32;
     line-height: 120%;
     max-width: 254px;
 
@@ -108,20 +102,20 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $color-white;
 
     @include xl {
-      font-size: 24px;
+      font-size: $font-size-24;
       max-width: 191px;
     }
 
     @include sm {
-      font-size: 16px;
+      font-size: $font-size-16;
       max-width: 127px;
     }
 
     @include xx {
-      font-size: 14px;
+      font-size: $font-size-14;
       max-width: 111px;
     }
 
