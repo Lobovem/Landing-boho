@@ -2,35 +2,24 @@
 @use "../mixins" as *;
 
 .actions {
-  // max-width: 790px;
-  // margin-right: 40px;
-
-  @include xl-min {
-    // grid-template-rows: 0.6fr 0.3fr 0.5fr 1fr;
-  }
 
   @include lg-min {
-    // display: grid;
     display: flex;
     align-items: center;
     flex-direction: column;
 
     gap: $gap;
-    // grid-template-rows: 0.6fr 0.3fr 0.65fr 1fr;
     justify-items: center;
   }
 
   @include lg {
     display: flex;
     align-items: center;
-    // flex: 1;
     flex-direction: column;
     margin-right: 0;
   }
 
-  @media (max-width: 585.8px) {
-    // justify-content: center;
-  }
+  @media (max-width: 585.8px) {}
 
 
 
@@ -43,7 +32,7 @@
 
     @include lg {
       max-width: 84px;
-      margin-bottom: 60px;
+      margin-bottom: 80px;
       padding-top: 40px;
     }
 
@@ -51,9 +40,6 @@
       margin-bottom: 20px;
     }
 
-    // @media (max-height: 850.8px) {
-    //   margin-bottom: 20px;
-    // }
   }
 
   &__title {

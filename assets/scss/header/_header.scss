@@ -60,50 +60,6 @@
     }
   }
 
-
-  // &__img-box {
-  //   position: relative;
-
-  //   @include xl {
-  //    
-  //   }
-
-  //   @include lg {
-  //     margin-left: -90px;
-
-  //     @include lg-min {
-  //       flex: 1;
-  //     }
-  //   }
-
-
-
-  //   @media (max-height: 1000.8px) {
-  //     max-height: 900px;
-  //   }
-
-  //   @media (max-height: 850.8px) {
-  //     max-height: 850px;
-  //   }
-
-  //   @media (max-height: 800.8px) {
-  //     // max-height: 800px;
-  //   }
-
-  //   @media (max-width: 1250.6px) and (min-width:1120px) {
-  //     width: 50%;
-  //   }
-
-
-
-  //   
-
-
-
-
-  //  
-  // }
-
   &__img-box {
 
     position: relative;
@@ -156,6 +112,16 @@
     // @media (min-height: 1000.8px) {
     //   max-width: 100%;
     // }
+    @media (min-height: 990.8px) {
+      max-width: 640px;
+
+    }
+
+    @media (min-height: 1050.8px) {
+      max-width: 700px;
+
+    }
+
 
     @include xl {
       max-width: 520px;
