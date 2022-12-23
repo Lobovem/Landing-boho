@@ -9,11 +9,9 @@
     @include md {
       width: min(100% - 40px, 1640px);
     }
-
     @include xx {
       width: min(100% - 20px, 1640px);
     }
-
     margin-inline: auto;
 
     &--alt {
@@ -21,52 +19,15 @@
 
       @include lg {
         margin-top: -50px;
-
-
       }
 
       @media (max-width: 585.8px) {
-        margin-top: 0px;
-
+        margin-top: 0;
       }
 
       @media (min-height: 1100.8px) {
         margin-top: -300px;
-
       }
-
-      //   @include xl {
-      //     margin-top: -140px;
-      //   }
-
-      //   @media (max-width: 1500.8px) {
-      //     margin-top: -150px;
-      //   }
-
-      //   @media (max-width: 1380.8px) {
-      //     margin-top: -40px;
-      //   }
-
-      //   @media (max-width: 576.8px) {
-      //     margin-top: 0;
-      //   }
-
-      //   @media (min-height: 1000.9px) {
-      //     margin-top: -150px;
-      //   }
-
-      //   @media (min-height: 1100.9px) {
-      //     margin-top: -250px;
-      //   }
-
-      //   @media (min-height: 750.9px) {
-      //     // margin-top: -20px;
-      //   }
-
-      //   @media (max-height: 750.5px) {
-      //     margin-top: -50px;
-      //   }
-      // }
     }
   }
 }

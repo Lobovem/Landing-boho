@@ -2,7 +2,6 @@
 @use "../mixins" as *;
 
 .actions {
-
   @include lg-min {
     display: flex;
     align-items: center;
@@ -11,35 +10,34 @@
     gap: $gap;
     justify-items: center;
   }
-
   @include lg {
     display: flex;
     align-items: center;
     flex-direction: column;
+
     margin-right: 0;
   }
 
-  @media (max-width: 585.8px) {}
+  @media (max-width: 585.8px) {
+  }
 
 
 
   &__logo {
     max-width: 127px;
-    padding-top: 60px;
     margin-bottom: 60px;
+    padding-top: 60px;
 
-    @include ul {}
-
+    @include ul {
+    }
     @include lg {
       max-width: 84px;
       margin-bottom: 80px;
       padding-top: 40px;
     }
-
     @include md {
       margin-bottom: 20px;
     }
-
   }
 
   &__title {
@@ -59,7 +57,6 @@
       font-size: $font-size-20;
       line-height: 24px;
     }
-
     @include xs {
       margin-bottom: 10px;
 
@@ -97,6 +94,19 @@
 
     @include ul {
       margin-bottom: 20px;
+    }
+    @include lg {
+      max-width: 440px;
+      margin-bottom: 20px;
+    }
+    @include md {
+      font-size: $font-size-38;
+    }
+    @include xs {
+      max-width: 390px;
+      margin-bottom: 10px;
+
+      font-size: $font-size-33;
     }
 
     @media (max-width: 1350.8px) {
@@ -105,6 +115,7 @@
 
     @media (max-width: 1600.8px) {
       margin-bottom: 30px;
+
       font-size: $font-size-71;
     }
 
@@ -114,22 +125,6 @@
 
     @media (max-width: 1100.8px) {
       font-size: $font-size-38;
-    }
-
-    @include lg {
-      max-width: 440px;
-      margin-bottom: 20px;
-    }
-
-    @include md {
-      font-size: $font-size-38;
-    }
-
-    @include xs {
-      max-width: 390px;
-      margin-bottom: 10px;
-
-      font-size: $font-size-33;
     }
   }
 
@@ -181,8 +176,8 @@
     font-weight: $font-weight-800;
     line-height: 41px;
 
-    @include xl {}
-
+    @include xl {
+    }
     @include lg {
       width: 229px;
       min-height: 56px;
@@ -190,7 +185,6 @@
       font-size: $font-size-18;
       line-height: 22px;
     }
-
     @include xs {
       font-size: $font-size-20;
       line-height: 24px;

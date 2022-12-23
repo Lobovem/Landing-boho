@@ -23,6 +23,25 @@
     position: relative;
     z-index: 3;
 
+    display: flex;
+    align-items: start;
+
+    gap: 80px;
+    @include xl {
+      gap: $gap-xl;
+    }
+    @include lg-min {
+      justify-content: space-between;
+    }
+    @include lg {
+      justify-content: space-around;
+
+      gap: $gap;
+    }
+    @include sm {
+      gap: $gap-sm;
+    }
+
 
 
     @media (min-width: 1100.8px) {
@@ -31,53 +50,25 @@
       max-height: 1200px;
     }
 
-    display: flex;
-    align-items: start;
-    gap: 80px;
-
-    @include xl {
-      gap: $gap-xl;
-    }
-
-    @include lg-min {
-      justify-content: space-between;
-
-    }
-
-    @include lg {
-      justify-content: space-around;
-
-      gap: $gap;
-    }
-
-    @include sm {
-      gap: $gap-sm;
-
-    }
-
     @media (max-width: 585.8px) {
       justify-content: center;
     }
   }
 
   &__img-box {
-
     position: relative;
 
     @include xl {
       margin-left: 40px;
-
     }
-
     @include md {
       margin-left: -72px;
-
     }
 
     @media (max-width: 585.8px) {
       display: none;
-      margin-left: 0px;
 
+      margin-left: 0;
     }
 
     &::before {
@@ -92,53 +83,32 @@
       content: "";
 
       background: linear-gradient(180deg, rgba(15, 24, 21, 0) 0%, #1f2d28 100%);
-
-      // @media (max-width: 1380.8px) {
-      //   height: 70px;
-      // }
     }
   }
 
   &__img {
     position: relative;
-    height: auto;
-
 
     max-width: 590px;
-
-
-
-
-    // @media (min-height: 1000.8px) {
-    //   max-width: 100%;
-    // }
-    @media (min-height: 990.8px) {
-      max-width: 640px;
-
-    }
-
-    @media (min-height: 1050.8px) {
-      max-width: 700px;
-
-    }
-
+    height: auto;
 
     @include xl {
       max-width: 520px;
     }
-
     @include lg {
       max-width: 350px;
     }
-
     @include md {
       max-width: 275px;
-
     }
 
+    @media (min-height: 990.8px) {
+      max-width: 640px;
+    }
 
-
-
+    @media (min-height: 1050.8px) {
+      max-width: 700px;
+    }
   }
 
 
