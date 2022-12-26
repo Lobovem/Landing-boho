@@ -3,7 +3,7 @@ const swiper = new Swiper('.swiper', {
 
   // Optional parameters
   // direction: 'vertical',
-  // loop: true,
+  loop: true,
 
   // If we need pagination
   pagination: {
@@ -25,7 +25,6 @@ const swiper = new Swiper('.swiper', {
     400: {
       slidesPerView: 3,
       spaceBetween: 20,
-
     },
 
     768: {
@@ -38,7 +37,7 @@ const swiper = new Swiper('.swiper', {
 
     1300: {
       slidesPerView: 6,
-    }
+    },
   },
 
   // Navigation arrows
@@ -52,4 +51,3 @@ const swiper = new Swiper('.swiper', {
   //   el: '.swiper-scrollbar',
   // },
 });
-
