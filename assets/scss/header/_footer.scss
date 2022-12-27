@@ -10,11 +10,13 @@
     padding-bottom: 80px;
 
     gap: 60px;
+
     @include xl {
       padding-bottom: 30px;
 
       gap: $gap;
     }
+
     @include lg {
       flex-direction: column;
 
@@ -22,6 +24,7 @@
 
       gap: $gap-md;
     }
+
     @include sm {
       padding-top: 20px;
     }
@@ -33,12 +36,15 @@
     @include xl {
       max-width: 203px;
     }
+
     @include lg {
       order: 1;
     }
+
     @include md {
       max-width: 125px;
     }
+
     @include xs {
       max-width: 103px;
     }
@@ -46,7 +52,6 @@
 
   &__decs {
     letter-spacing: 0.05em;
-    text-transform: capitalize;
 
     color: #6d6d71;
 
@@ -57,11 +62,13 @@
     @include xl {
       font-size: $font-size-16;
     }
+
     @include lg {
       order: 0;
 
       text-align: center;
     }
+
     @include sm {
       font-size: $font-size-12;
     }
