@@ -11,6 +11,10 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 
+  autoplay: {
+    delay: 3000,
+  },
+
   //Количество слайдов на странице
 
   // slidesPerView: 3,
