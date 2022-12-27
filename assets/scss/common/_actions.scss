@@ -10,7 +10,6 @@
     gap: $gap;
     justify-items: center;
   }
-
   @include lg {
     display: flex;
     align-items: center;
@@ -19,7 +18,8 @@
     margin-right: 0;
   }
 
-  @media (max-width: 585.8px) {}
+  @media (max-width: 585.8px) {
+  }
 
 
 
@@ -28,14 +28,13 @@
     margin-bottom: 60px;
     padding-top: 60px;
 
-    @include ul {}
-
+    @include ul {
+    }
     @include lg {
       max-width: 84px;
       margin-bottom: 80px;
       padding-top: 40px;
     }
-
     @include md {
       margin-bottom: 20px;
     }
@@ -58,7 +57,6 @@
       font-size: $font-size-20;
       line-height: 24px;
     }
-
     @include xs {
       margin-bottom: 10px;
 
@@ -97,16 +95,13 @@
     @include ul {
       margin-bottom: 20px;
     }
-
     @include lg {
       max-width: 440px;
       margin-bottom: 20px;
     }
-
     @include md {
       font-size: $font-size-38;
     }
-
     @include xs {
       max-width: 390px;
       margin-bottom: 10px;
@@ -181,8 +176,8 @@
     font-weight: $font-weight-800;
     line-height: 41px;
 
-    @include xl {}
-
+    @include xl {
+    }
     @include lg {
       width: 229px;
       min-height: 56px;
@@ -190,7 +185,6 @@
       font-size: $font-size-18;
       line-height: 22px;
     }
-
     @include xs {
       font-size: $font-size-20;
       line-height: 24px;
