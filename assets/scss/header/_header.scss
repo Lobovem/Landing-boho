@@ -27,17 +27,28 @@
     align-items: start;
 
     gap: 80px;
+
     @include xl {
       gap: $gap-xl;
     }
+
     @include lg-min {
       justify-content: space-between;
     }
+
+    @media (max-width: 1100px) {
+      margin-bottom: 100px;
+
+    }
+
     @include lg {
-      justify-content: space-around;
+      // justify-content: space-around;
+      justify-content: space-between;
+
 
       gap: $gap;
     }
+
     @include sm {
       gap: $gap-sm;
     }
@@ -59,16 +70,15 @@
     position: relative;
 
     @include xl {
-      margin-left: 40px;
+      // margin-left: 40px;
     }
-    @include md {
-      margin-left: -72px;
-    }
+
+    @include md {}
 
     @media (max-width: 585.8px) {
       display: none;
 
-      margin-left: 0;
+      // margin-left: 0;
     }
 
     &::before {
@@ -87,19 +97,39 @@
   }
 
   &__img {
-    position: relative;
+    position: absolute;
+    left: -130px;
+    top: 130px;
 
-    max-width: 590px;
+    // max-width: 590px;
     height: auto;
+    max-width: 1050px;
 
     @include xl {
-      max-width: 520px;
+      max-width: 750px;
+      top: 170px;
+      left: -50px;
+      // top: 200px;
     }
+
+    @media (max-width: 1100px) {
+      left: -50px;
+      top: 100px;
+    }
+
     @include lg {
-      max-width: 350px;
+      max-width: 550px;
     }
+
     @include md {
-      max-width: 275px;
+      max-width: 400px;
+      left: -30px;
+    }
+
+    @media (max-width: 700px) {
+      top: 150px;
+      max-width: 300px;
+
     }
 
     @media (min-height: 990.8px) {
@@ -107,7 +137,7 @@
     }
 
     @media (min-height: 1050.8px) {
-      max-width: 700px;
+      max-width: 1100px;
     }
   }
 
